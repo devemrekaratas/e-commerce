@@ -97,7 +97,7 @@ watch(() => route.query, (newQuery) => {
 <template>
     <div>
         <div v-if="productAll?.products">
-            <div class="flex items-center sm:flex-row flex-col sm:gap-0 gap-2 justify-between pt-1.5 pb-4">
+            <div class="flex sm:items-center items-start sm:flex-row flex-col sm:gap-0 gap-2 justify-between pt-1.5">
                 <!-- Breadcrumb  -->
                 <UBreadcrumb class="font-semibold" :links="links" />
                 <!-- Breadcrumb  -->

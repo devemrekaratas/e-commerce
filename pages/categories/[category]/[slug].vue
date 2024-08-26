@@ -9,7 +9,7 @@ const route = useRoute()
 const slug: string = String(route.params.slug)
 const id: number = getIdFromSlug(slug)
 
-const { data: product } = await useLazyFetch<IProduct>(`https://dummyjson.com/products/${id}`)
+const { data: product } = await useFetch<IProduct>(`https://dummyjson.com/products/${id}`)
 
 const links = [{
   label: 'Home',
@@ -74,7 +74,7 @@ useSeoMeta({
       </div>
     </div>
     <UDivider class="py-8" :label="`Reviews (${product?.reviews.length})`" />
-    <div class="max-w-sm pb-8">
+    <div class="max-w-sm">
       <!--Comments-->
       <div v-for="review in product?.reviews">
         <div class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-100">
