@@ -20,6 +20,7 @@ export default defineNuxtConfig({
       isEnabled:true
     },
     provider: {
+      trustHost:true,
       type: 'authjs'
     }
   },
