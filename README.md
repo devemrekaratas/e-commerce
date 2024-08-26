@@ -19,7 +19,7 @@ To get started with the project, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/nuxt3-mini-ecommerce.git 
+git clone https://github.com/devemrekaratas/nuxt3-mini-ecommerce.git 
 ```
 
 ### Navigate to the Project Directory
