@@ -25,7 +25,8 @@ export default defineAppConfig({
       placeholder: 'text-white dark:text-black'
     },
     modal: {
-      rounded: 'rounded-none'
+      rounded: 'rounded-none',
+      container:'items-start'
     },
     commandPalette: {
       group: {
@@ -71,6 +72,6 @@ export default defineAppConfig({
           icon:'i-material-symbols:chevron-right'
         }
       }
-    }
+    },
   }
 })

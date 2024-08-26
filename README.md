@@ -10,7 +10,7 @@ A small e-commerce application built with Nuxt 3, utilizing TypeScript, Sidebase
 - User authentication with Sidebase Auth
 - Product listing fetched from DummyJSON
 - Responsive UI with Nuxt UI
-- Sorting options for product listings (Recommended, Ascending, Descending)
+- Animated sorting options for product listings (Price: Low to High, Price: High to Low)
 
 ## Installation
 

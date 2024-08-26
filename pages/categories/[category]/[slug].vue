@@ -9,7 +9,7 @@ const route = useRoute()
 const slug: string = String(route.params.slug)
 const id: number = getIdFromSlug(slug)
 
-const { data: product } = await useFetch<IProduct>(`https://dummyjson.com/products/${id}`)
+const { data: product } = await useLazyFetch<IProduct>(`https://dummyjson.com/products/${id}`)
 
 const links = [{
   label: 'Home',
@@ -29,7 +29,8 @@ const links = [{
 
 useSeoMeta({
   title: product.value?.title,
-  description: product.value?.description
+  description: product.value?.description,
+  ogImage: product.value?.thumbnail
 })
 
 </script>

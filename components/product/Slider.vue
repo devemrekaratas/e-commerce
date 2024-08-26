@@ -31,7 +31,7 @@ const setThumbsSwiper = (swiper: any) => {
             }" :thumbs="{ swiper: thumbsSwiper }" :lazy="true" :modules="modules" :slides-per-view="1"
                 :navigation="true" class="lg:w-[530px] lg:h-[530px] xl:w-[600px] xl:h-[600px]">
                 <SwiperSlide class="h-full w-full bg-slate-100" v-for="img in props.images">
-                    <NuxtImg class="h-full w-full bg-slate-100 object-contain" :src="img" loading="lazy" />
+                    <NuxtImg class="h-full w-full bg-slate-100 object-contain" :src="img" width="600" height="600" loading="lazy" />
                     <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
                 </SwiperSlide>
             </Swiper>
